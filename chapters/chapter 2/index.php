@@ -1,23 +1,11 @@
 <?php
-$firstNum = 4;
-$secondNum = 5;
-$list = "<ul>";
-
-for ($i=1;$i<=$firstNum;$i++){
-
-$list.="<li> $i <ul>";
-
-    for($j=1;$j<=$secondNum;$j++){
-
-    $list .= "<li> $j </li>";
-
-     }
-     $list .= "</ul> </li>";
+class Phone {
+public $color;
+public $manufacturer;
+static public $numberSold = 13;
 }
-
-$list .="<ul>";
-
-
+Phone::$numberSold+=5;
+echo Phone::$numberSold;
 
 
 
@@ -37,7 +25,7 @@ $list .="<ul>";
     <title>Excersise 1</title>
   </head>
   <body>
-    <h1> <?php echo $list; ?>  </h1>
+    <h1>   </h1>
     
   </body>
 </html>
